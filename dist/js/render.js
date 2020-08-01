@@ -4,12 +4,24 @@ function render() {
 
     array.forEach(video => {
         video.addEventListener("mouseenter", function (event) {
-            video.play();
             video.controls = true;
         }, false);
         video.addEventListener("mouseleave", function (event) {
-            video.pause();
             video.controls = false;
         }, false);
+
+        video.onplay = function () {
+            const playIcon = document.getElementById(video.id);
+            playIcon.classList.add("hidden");
+        }
+        video.onpause = function () {
+            const playIcon = document.getElementById(video.id);
+            playIcon.classList.remove("hidden");
+        }
+        video.onended = function () {
+            const playIcon = document.getElementById(video.id);
+            playIcon.classList.remove("hidden");
+            video.load();
+        }
     });
 }
