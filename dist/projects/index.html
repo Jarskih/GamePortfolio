@@ -14,20 +14,35 @@
 
 <body class="font-sans antialiased leading-tight bg-deepblue text-gray-100">
     <nav
-        class="flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full max-w-6xl m-auto">
-        <div class="sm:mb-0 self-center">
-            <a class="text-xl text-md no-underline text-gray-200 border-solid border-deepblue hover:border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
-                href="/">Game Portfolio</a>
-            <a class="text-xl no-underline text-gray-200 border-solid border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
-                href="/projects">Projects</a>
-            <a class="text-xl no-underline text-gray-200 border-solid border-deepblue hover:border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
-                href="/about">About me</a>
+        class="flex flex-col md:text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full max-w-6xl m-auto">
+
+        <div class="flex flex-col md:flex-row sm:mb-0 md:self-center">
+            <a class="block mb-2 md:mb-0 text-xl text-md no-underline text-gray-200 ml-2 px-1 font-bold" href="/">
+                <span
+                    class="border-solid border-deepblue hover:border-gray-500 border-b-2 transition duration-300 ease-in-out">Game
+                    Portfolio</span></a>
+            <a class="block mb-2 md:mb-0 text-xl no-underline text-gray-200  ml-2 px-1 font-bold" href="/projects">
+                <span
+                    class="border-solid border-gray-500 border-b-2 transition duration-300 ease-in-out">Projects</span></a>
+            <a class="block mb-2 md:mb-0 text-xl no-underline text-gray-200 border-solid border-deepblue hover:border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
+                href="/about">
+                <span
+                    class="border-solid border-deepblue hover:border-gray-500 border-b-2 transition duration-300 ease-in-out">About
+                    me
+                </span>
+            </a>
         </div>
 
-        <a target="blank" href="https://www.linkedin.com/in/jarihanski/"
-            class="sm-mb-0 self-center bg-gray-900 text-white hover:bg-white hover:text-gray-900 inline-block px-6 py-4 font-bold transition duration-300 ease-in-out sm:visible invisible">
-            LinkedIn
-        </a>
+        <div class="sm:block hidden">
+            <a target="blank" href="https://www.linkedin.com/in/jarihanski/"
+                class="sm-mb-0 self-center bg-gray-900 text-white hover:bg-white hover:text-gray-900 inline-block px-6 py-4 font-bold transition duration-300 ease-in-out">
+                LinkedIn
+            </a>
+            <a target="blank" href="https://github.com/Jarskih"
+                class="sm-mb-0 self-center bg-gray-900 text-white hover:bg-white hover:text-gray-900 inline-block px-6 py-4 font-bold transition duration-300 ease-in-out">
+                Github
+            </a>
+        </div>
     </nav>
 
     <div class="bg-center h-ful pb-18 sm:mt-24">
@@ -43,10 +58,10 @@
         </div>
     </div>
 
-    <div class="m-auto max-w-6xl p-12">
+    <div class="m-auto max-w-6xl p-4 md:p-12">
 
         <a href="//www.techcheetah.com"
-            class="md:flex shadow-lg mx-6 md:mx-auto my-8 max-w-lg md:max-w-4xl h-64 transition duration-500 ease-in-out hover:translate-y-20">
+            class="block md:flex shadow-lg mx-0 md:mx-auto mb-8 max-w-lg md:max-w-4xl h-full md:h-64 transition duration-500 ease-in-out hover:translate-y-20">
             <img class="bg-white p-2 h-full w-full md:w-3/5 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none pb-5/6"
                 src="../assets/techcheetah.jpg" alt="techcheetah.com">
             <div
@@ -61,13 +76,14 @@
                     </p>
                 </div>
                 <div class="flex items-center justify-end mt-4 top-auto">
-                    <span class="bg-red-200 text-red-800 py-1 px-4 rounded-full mr-2">JavaScript</span>
+                    <span class="bg-red-200 text-red-800 py-1 px-4 rounded-full mr-2">Node.js</span>
                     <span class="bg-green-200 text-green-800 py-1 px-4 rounded-full mr-auto">Tailwind</span>
                 </div>
             </div>
         </a>
 
-        <a href="//www.shunengwuhuo.com" class="md:flex shadow-lg mx-6 md:mx-auto my-8 max-w-lg md:max-w-4xl h-64">
+        <a href="//www.shunengwuhuo.com"
+            class="block md:flex shadow-lg mx-0 md:mx-auto mb-8 max-w-lg md:max-w-4xl h-full md:h-64 transition duration-500 ease-in-out hover:translate-y-20">
             <img class="bg-white p-2 h-full w-full md:w-3/5 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none pb-5/6"
                 src="../assets/shunengwuhuo.jpg" alt="Shunengwuhuo.com">
             <div
@@ -82,12 +98,12 @@
                 </div>
                 <div class="flex items-center justify-end mt-4 top-auto">
                     <span class="bg-purple-200 text-purple-800 py-1 px-4 rounded-full mr-2">Bootstrap</span>
-                    <span class="bg-blue-200 text-blue-800 py-1 px-4 rounded-full mr-auto">MeteorJS</span>
+                    <span class="bg-blue-200 text-blue-800 py-1 px-4 rounded-full mr-auto">Meteor</span>
                 </div>
             </div>
         </a>
 
-        <div class="inline md:flex shadow-lg mx-6 md:mx-auto my-8 max-w-lg md:max-w-4xl h-64">
+        <div class="block md:flex shadow-lg mx-0 md:mx-auto mb-8 max-w-lg md:max-w-4xl h-full md:h-64">
             <img class="bg-white p-2 h-full w-full md:w-3/5 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none pb-5/6"
                 src="../assets/app.png" alt="Shunengwuhuo iOS & Android APP">
             <div
@@ -102,12 +118,12 @@
                 </div>
                 <div class="flex items-center justify-end mt-4 top-auto">
                     <span class="bg-orange-200 text-orange-800 py-1 px-4 rounded-full mr-2">React Native</span>
-                    <span class="bg-blue-200 text-blue-800 py-1 px-4 rounded-full mr-auto">MeteorJS</span>
+                    <span class="bg-blue-200 text-blue-800 py-1 px-4 rounded-full mr-auto">Meteor</span>
                 </div>
             </div>
         </div>
 
-        <div class="inline  md:flex shadow-lg mx-6 md:mx-auto my-8 max-w-lg md:max-w-4xl h-64">
+        <div class="block  md:flex shadow-lg mx-0 md:mx-auto mb-8 max-w-lg md:max-w-4xl h-full md:h-64">
             <img class="h-full w-full md:w-3/5 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none pb-5/6"
                 src="../assets/webinars.jpg" alt="Studyabroad.live">
             <div
@@ -122,12 +138,12 @@
                 </div>
                 <div class="flex items-center justify-end mt-4 top-auto">
                     <span class="bg-purple-200 text-purple-800 py-1 px-4 rounded-full mr-2">Bootstrap</span>
-                    <span class="bg-blue-200 text-blue-800 py-1 px-4 rounded-full mr-auto">MeteorJS</span>
+                    <span class="bg-blue-200 text-blue-800 py-1 px-4 rounded-full mr-auto">Meteor</span>
                 </div>
             </div>
         </div>
 
-        <div class="inline  md:flex shadow-lg mx-6 md:mx-auto my-8 max-w-lg md:max-w-4xl h-64">
+        <div class="block  md:flex shadow-lg mx-0 md:mx-auto mb-8 max-w-lg md:max-w-4xl h-full md:h-64">
             <img class="bg-white p-2 h-full w-full md:w-3/5 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none pb-5/6"
                 src="../assets/mentoris.png" alt="Mentoris.io">
             <div

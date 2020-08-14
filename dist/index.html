@@ -14,19 +14,34 @@
 
 <body onload=render() class="font-sans antialiased leading-tight bg-deepblue text-gray-100">
 	<nav
-		class="flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full max-w-6xl m-auto">
-		<div class="sm:mb-0 self-center">
-			<a class="text-xl text-md no-underline text-gray-200 border-solid border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
-				href="/">Game Portfolio</a>
-			<a class="text-xl no-underline text-gray-200 border-solid border-deepblue hover:border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
-				href="/projects">Projects</a>
-			<a class="text-xl no-underline text-gray-200 border-solid border-deepblue hover:border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
-				href="/about">About me</a>
+		class="flex flex-col md:text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full max-w-6xl m-auto">
+
+		<div class="flex flex-col md:flex-row sm:mb-0 md:self-center">
+			<a class="block mb-2 md:mb-0 text-xl text-md no-underline text-gray-200 ml-2 px-1 font-bold" href="/">
+				<span class="border-solid border-gray-500  border-b-2 transition duration-300 ease-in-out">Game
+					Portfolio</span></a>
+			<a class="block mb-2 md:mb-0 text-xl no-underline text-gray-200  ml-2 px-1 font-bold" href="/projects">
+				<span
+					class="border-solid border-deepblue hover:border-gray-500 border-b-2 transition duration-300 ease-in-out">Projects</span></a>
+			<a class="block mb-2 md:mb-0 text-xl no-underline text-gray-200 border-solid border-deepblue hover:border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
+				href="/about">
+				<span
+					class="border-solid border-deepblue hover:border-gray-500 border-b-2 transition duration-300 ease-in-out">About
+					me
+				</span>
+			</a>
 		</div>
-		<a target="blank" href="https://www.linkedin.com/in/jarihanski/"
-			class="sm-mb-0 self-center bg-gray-900 text-white hover:bg-white hover:text-gray-900 inline-block px-6 py-4 font-bold transition duration-300 ease-in-out sm:visible invisible">
-			LinkedIn
-		</a>
+
+		<div class="sm:block hidden">
+			<a target="blank" href="https://www.linkedin.com/in/jarihanski/"
+				class="sm-mb-0 self-center bg-gray-900 text-white hover:bg-white hover:text-gray-900 inline-block px-6 py-4 font-bold transition duration-300 ease-in-out">
+				LinkedIn
+			</a>
+			<a target="blank" href="https://github.com/Jarskih"
+				class="sm-mb-0 self-center bg-gray-900 text-white hover:bg-white hover:text-gray-900 inline-block px-6 py-4 font-bold transition duration-300 ease-in-out">
+				Github
+			</a>
+		</div>
 	</nav>
 
 	<div class="bg-center h-ful pb-18 sm:mt-24">
@@ -43,126 +58,136 @@
 	</div>
 
 	<section class="flex flex-col md:flex-row flex-wrap px-6 py-10 md:px-6 md:py-10 mx-auto max-w-screen-xl container">
-		<div class="w-full md:w-1/2 h-full md:h-100 mb-8 px-4 relative">
-			<div class="absolute h-auto opacity-50 antialiased mx-auto inset-0 flex items-center justify-center">
-				<img id="video-1" src="assets/play.png" class="block w-24 h-auto opacity-75 -mt-24" />
-			</div>
+
+		<div class="w-full md:w-1/2 h-full md:h-100 mb-8 md:px-4 relative">
 			<video id="video-1" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/chaos_gate_1.jpg">
-				<source type="video/mp4" src="assets/chaosgate.mp4" />
+				<source type="video/mp4" src="assets/chaosgate-v0.8.1.mp4" />
 			</video>
-			<a href="https://jarski.itch.io/warhammer-40k-chaos-gate-remake" title="Chaos Gate remake by Jari Hanski"
+			<a href="https://jarski.itch.io/warhammer-40k-chaos-gate-remake" title="Chaos Gate remake"
 				class="flex flex-col h-full w-full">
-				<div class="flex justify-between text-2xl text-gray-200 px-4 py-4 bg-red-900 bg-opacity-100">
+				<div class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-red-900 bg-opacity-100">
 					<span>Chaos Gate remake</span>
-					<img class="w-24 h-auto" src="assets/unity.svg" />
+					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
 				</div>
 				<div class="text-gray-200 px-4 py-4 bg-red-700 bg-opacity-100">
-					<p>XCOM inspired remake of the classic Chaos Gate game. Includes Ultramarines against the forces of
+					<p class="block md:inline-block mb-4">XCOM inspired remake of the classic Chaos Gate game. Includes
+						Ultramarines against the forces of
 						Chaos.</p>
-					<span class="text-sm">Responsibilities:</span>
-					<div class="inline-block mt-4 px-1 py-1 font-semibold uppercase text-sm">Game Design</div>
-					<div class="inline-block mt-4 px-1 py-1 font-semibold uppercase text-sm">Programming</div>
+					<span class="text-sm mt-4">Responsibilities:</span>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">Game
+						Design</div>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
+						Programming</div>
 				</div>
 			</a>
 		</div>
-		<div class="w-full md:w-1/2 h-full md:h-100 mb-8 px-4 relative">
-			<div class="absolute h-auto opacity-50 antialiased mx-auto inset-0 flex items-center justify-center">
-				<img id="video-2" src="assets/play.png" class="block w-24 h-auto -mt-24" />
-			</div>
+
+		<div class="w-full md:w-1/2 h-full md:h-100 mb-8 md:px-4 relative">
 			<video id="video-2" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/scallywags_1.jpg">
 				<source type="video/mp4" src="assets/scallywags.mp4" />
 			</video>
-			<a href="https://jarski.itch.io/scallywags" title="Scallywags by Jari Hanski"
-				class="flex flex-col h-full w-full">
-				<div class="flex justify-between text-2xl text-gray-200 px-4 py-4 bg-orange-900 bg-opacity-100">
+			<a href="https://jarski.itch.io/scallywags" title="Scallywags" class="flex flex-col h-full w-full">
+				<div
+					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-orange-900 bg-opacity-100">
 					<span>Scallywags</span>
-					<img class="w-24 h-auto" src="assets/unity.svg" />
+					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
 				</div>
 				<div class="text-gray-200 px-4 py-4 bg-orange-700 bg-opacity-100">
-					<p>Scallywags!' is a chaotic, couch
+					<p class="block md:inline-block mb-4">Scallywags!' is a chaotic, couch
 						co-op
 						game where you and your friends need to survive the journey over the open seas.</p>
-					<span class="text-sm">Responsibilities:</span>
-					<div class="inline-block mt-4 px-1 py-1 font-semibold uppercase text-sm">Programming</div>
+					<span class="text-sm mt-4">Responsibilities:</span>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">Game
+						Design</div>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
+						Programming</div>
 				</div>
 			</a>
 		</div>
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-4 sm:mb-0 px-4 relative">
-			<div class="absolute h-auto opacity-50 antialiased mx-auto inset-0 flex items-center justify-center">
-				<img id="video-3" src="assets/play.png" class="block w-24 h-auto -mt-24" />
-			</div>
+
+		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative">
 			<video id="video-3" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/space.hulk.jpg">
 				<source type="video/mp4" src="assets/spacecrusade.mp4" />
 			</video>
-			<a href="https://jarski.itch.io/space-hulk-space-crusade" title="Space Hulk remake by Jari Hanski"
+			<a href="https://jarski.itch.io/space-hulk-space-crusade" title="Space Hulk remake "
 				class="flex flex-col h-full w-full">
 
-				<div class="flex justify-between text-2xl text-gray-200 px-4 py-4 bg-green-900 bg-opacity-100">
+				<div
+					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-green-900 bg-opacity-100">
 					<span>Space Hulk remake</span>
-					<img class="w-24 h-auto" src="assets/unity.svg" />
+					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
 				</div>
 
 				<div class="text-gray-200 px-4 py-4 bg-green-700 bg-opacity-100">
-					<p>Modern take on classics like Space Hulk
+					<p class="block md:inline-block mb-4">Modern take on classics like Space Hulk
 						and Space Crusade.</p>
-					<span class="text-sm">Responsibilities:</span>
-					<div class="inline-block mt-4 px-1 py-1 font-semibold uppercase text-sm">Game Design</div>
-					<div class="inline-block mt-4 px-1 py-1 font-semibold uppercase text-sm">Programming</div>
+					<span class="text-sm mt-4">Responsibilities:</span>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">Game
+						Design
+					</div>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
+						Programming
+					</div>
 				</div>
 			</a>
 		</div>
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-4 sm:mb-0 px-4 relative">
-			<div class="absolute h-auto opacity-50 antialiased mx-auto inset-0 flex items-center justify-center">
-				<img id="video-4" src="assets/play.png" class="block w-24 h-auto -mt-24" />
-			</div>
+
+		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative">
+			<video id="video-5" controlsList="nodownload" playsinline preload="metadata" class="z-10"
+				poster="assets/openapoc.jpg">
+				<source type="video/mp4" src="assets/openapoc.mp4" />
+			</video>
+			<a href="https://github.com/OpenApoc/OpenApoc" title="Open source version of X-Com Apocalypse"
+				class="flex flex-col h-full w-full">
+
+				<div
+					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-blue-900 bg-opacity-100">
+					<span>OpenApoc</span>
+					<img alt="Made in C++" class="inline-block h-auto w-8" src="assets/ISO_C++_Logo.svg" />
+				</div>
+
+				<div class="text-gray-200 px-4 py-4 bg-blue-700 bg-opacity-100">
+					<p class="block md:inline-block mb-4">OpenApoc re-implementation of the original X-COM: Apocalypse,
+						written in C++ / SDL2.</p>
+					<span class="text-sm mt-4">Responsibilities:</span>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
+						Contributor
+						(Programming)
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative">
 			<video id="video-4" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/zambazooka-min.png">
 				<source type="video/mp4" src="assets/zambazooka.mp4" />
 			</video>
-			<a href="https://jarski.itch.io/space-hulk-space-crusade" title="Space Hulk remake by Jari Hanski"
-				class="flex flex-col h-full w-full">
+			<a href="https://jarski.itch.io/zambazooka" title="ZambaZooka" class="flex flex-col h-full w-full">
 
-				<div class="flex justify-between text-2xl text-gray-200 px-4 py-4 bg-purple-900 bg-opacity-100">
+				<div
+					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-purple-900 bg-opacity-100">
 					<span>ZambaZooka</span>
-					<img class="w-24 h-auto" src="assets/unity.svg" />
+					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
 				</div>
 
 				<div class="text-gray-200 px-4 py-4 bg-purple-700 bg-opacity-100">
-					<p>Armed with bazookas, your goal is to
+					<p class="block md:inline-block mb-4">Armed with bazookas, your goal is to
 						blow up your opponents as many times as you can!</p>
-					<span class="text-sm">Responsibilities:</span>
-					<div class="inline-block mt-4 px-1 py-1 font-semibold uppercase text-sm">Programming</div>
+					<span class="block md:inline-block text-sm">Responsibilities:</span>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">Game
+						Design
+					</div>
+					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
+						Programming
+					</div>
 				</div>
 			</a>
 		</div>
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-4 sm:mb-0 px-4 relative">
-			<div class="absolute h-auto opacity-50 antialiased mx-auto inset-0 flex items-center justify-center">
-				<img id="video-5" src="assets/play.png" class="block w-24 h-auto -mt-24" />
-			</div>
-			<video id="video-5" controlsList="nodownload" playsinline preload="metadata" class="z-10"
-				poster="assets/space.hulk.jpg">
-				<source type="video/mp4" src="assets/spacecrusade.mp4" />
-			</video>
-			<a href="https://jarski.itch.io/space-hulk-space-crusade" title="Space Hulk remake by Jari Hanski"
-				class="flex flex-col h-full w-full">
 
-				<div class="flex justify-between text-2xl text-gray-200 px-4 py-4 bg-blue-900 bg-opacity-100">
-					<span>Space Hulk remake</span>
-					<img class="w-24 h-auto" src="assets/unity.svg" />
-				</div>
-
-				<div class="text-gray-200 px-4 py-4 bg-blue-700 bg-opacity-100">
-					<p>Modern take on classics like Space Hulk
-						and Space Crusade.</p>
-					<span>Responsibilities:</span>
-					<div class="inline-block mt-4 px-1 py-1 font-semibold uppercase text-sm">Game Design</div>
-					<div class="inline-block mt-4 px-1 py-1 font-semibold uppercase text-sm">Programming</div>
-				</div>
-			</a>
-		</div>
 		</div>
 	</section>
 

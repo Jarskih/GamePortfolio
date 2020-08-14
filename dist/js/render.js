@@ -11,16 +11,16 @@ function render() {
         }, false);
 
         video.onplay = function () {
-            const playIcon = document.getElementById(video.id);
-            playIcon.classList.add("hidden");
+            array.forEach(v => {
+                if (video !== v) {
+                    v.pause();
+                }
+            });
         }
         video.onpause = function () {
-            const playIcon = document.getElementById(video.id);
-            playIcon.classList.remove("hidden");
         }
         video.onended = function () {
             const playIcon = document.getElementById(video.id);
-            playIcon.classList.remove("hidden");
             video.load();
         }
     });
