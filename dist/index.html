@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full" itemscope="" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+<html lang="en" class="h-full" itemscope="" xmlns:og="http://ogp.me/ns#">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,7 +8,7 @@
 	<meta content="Jari Hanski" name="author">
 	<meta content="Game Programming Portfolio" name="description">
 	<meta content="Game Programming Portfolio" name="keywords">
-	<link href="css/tailwind.css" rel="stylesheet" type="text/css">
+	<link href="css/tailwind.min.css" rel="stylesheet" type="text/css">
 	<link href="css/custom.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -50,8 +50,7 @@
 				<h1
 					class="font-display text-gray-100 font-bold md:text-5xl text-2xl uppercase mb-6 leading-none m-auto">
 					Game Programming Portfolio</h1>
-				<p class="text-xl sm:text-2xl text-gray-200 leading-normal max-w-2xl m-auto mb-6">I am currently
-					studying in Uppsala University and focusing on game AI and gameplay programming.
+				<p class="text-xl sm:text-2xl text-gray-200 leading-normal max-w-2xl m-auto mb-6">
 				</p>
 			</div>
 		</div>
@@ -59,10 +58,10 @@
 
 	<section class="flex flex-col md:flex-row flex-wrap px-6 py-10 md:px-6 md:py-10 mx-auto max-w-screen-xl container">
 
-		<div class="w-full md:w-1/2 h-full md:h-100 mb-8 md:px-4 relative">
+		<div class="w-full md:w-1/3 h-full md:h-100 mb-8 md:px-4 relative overflow-hidden">
 			<video id="video-1" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/chaos_gate_1.jpg">
-				<source type="video/mp4" src="assets/chaosgate-v0.8.1.mp4" />
+				<source type="video/mp4" src="assets/2020-11-28 16-07-31.mkv" />
 			</video>
 			<a href="https://jarski.itch.io/warhammer-40k-chaos-gate-remake" title="Chaos Gate remake"
 				class="flex flex-col h-full w-full">
@@ -70,20 +69,27 @@
 					<span>Chaos Gate remake</span>
 					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
 				</div>
-				<div class="text-gray-200 px-4 py-4 bg-red-700 bg-opacity-100">
-					<p class="block md:inline-block mb-4">XCOM inspired remake of the classic Chaos Gate game. Includes
-						Ultramarines against the forces of
-						Chaos.</p>
-					<span class="text-sm mt-4">Responsibilities:</span>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">Game
-						Design</div>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
-						Programming</div>
+				<div
+					class="text-gray-200 px-4 py-2 bg-red-700 bg-opacity-100 h-full flex-row justify-between align-bottom">
+					<div class="flex">
+						<p class="block md:inline-block mb-4">XCOM inspired remake of the classic Chaos Gate game.
+							Includes
+							Ultramarines against the forces of
+							Chaos.</p>
+					</div>
+					<div class="flex flex-col md:flex-row">
+						<div class="text-sm  px-1 py-1">Responsibilities:
+						</div>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">Game
+							Design</div>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
+							Programming</div>
+					</div>
 				</div>
 			</a>
 		</div>
 
-		<div class="w-full md:w-1/2 h-full md:h-100 mb-8 md:px-4 relative">
+		<div class="w-full md:w-1/3 h-full md:h-100 mb-8 md:px-4 relative overflow-hidden">
 			<video id="video-2" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/scallywags_1.jpg">
 				<source type="video/mp4" src="assets/scallywags.mp4" />
@@ -94,20 +100,25 @@
 					<span>Scallywags</span>
 					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
 				</div>
-				<div class="text-gray-200 px-4 py-4 bg-orange-700 bg-opacity-100">
-					<p class="block md:inline-block mb-4">Scallywags!' is a chaotic, couch
-						co-op
-						game where you and your friends need to survive the journey over the open seas.</p>
-					<span class="text-sm mt-4">Responsibilities:</span>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">Game
-						Design</div>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
-						Programming</div>
+				<div class="text-gray-200 px-4 py-2 bg-orange-700 bg-opacity-100 h-full">
+					<div class="flex">
+						<p class="block md:inline-block mb-4">Scallywags!' is a chaotic, couch
+							co-op
+							game where you and your friends need to survive the journey over the open seas.</p>
+					</div>
+					<div class="flex flex-col md:flex-row">
+						<div class="text-sm px-1 py-1">Responsibilities:
+						</div>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">Game
+							Design</div>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
+							Programming</div>
+					</div>
 				</div>
 			</a>
 		</div>
 
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative">
+		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:px-4 relative overflow-hidden">
 			<video id="video-3" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/space.hulk.jpg">
 				<source type="video/mp4" src="assets/spacecrusade.mp4" />
@@ -121,21 +132,29 @@
 					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
 				</div>
 
-				<div class="text-gray-200 px-4 py-4 bg-green-700 bg-opacity-100">
-					<p class="block md:inline-block mb-4">Modern take on classics like Space Hulk
-						and Space Crusade.</p>
-					<span class="text-sm mt-4">Responsibilities:</span>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">Game
-						Design
+				<div class="text-gray-200 bg-green-700 bg-opacity-100 px-4 py-2 flex flex-col between">
+					<div class="flex">
+						<p class="block md:inline-block mb-4">A turn-based remake inspired by the classics boardgames
+							like Space
+							Hulk
+							and Space Crusade using neural network for pathfinding.</p>
 					</div>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
-						Programming
+
+					<div class="flex flex-col md:flex-row">
+						<span class="text-sm px-1 py-1">Responsibilities:</span>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
+							Game Design
+						</div>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
+							Programming
+						</div>
 					</div>
 				</div>
+
 			</a>
 		</div>
 
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative">
+		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative overflow-hidden ">
 			<video id="video-5" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/openapoc.jpg">
 				<source type="video/mp4" src="assets/openapoc.mp4" />
@@ -149,19 +168,26 @@
 					<img alt="Made in C++" class="inline-block h-auto w-8" src="assets/ISO_C++_Logo.svg" />
 				</div>
 
-				<div class="text-gray-200 px-4 py-4 bg-blue-700 bg-opacity-100">
-					<p class="block md:inline-block mb-4">OpenApoc re-implementation of the original X-COM: Apocalypse,
-						written in C++ / SDL2.</p>
-					<span class="text-sm mt-4">Responsibilities:</span>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
-						Contributor
-						(Programming)
+				<div class="text-gray-200 bg-blue-700 bg-opacity-100 px-4 py-2 flex flex-col between">
+					<div class="flex">
+						<p class="block md:inline-block mb-4">OpenApoc re-implementation of the original X-COM:
+							Apocalypse,
+							written in C++ / SDL2.</p>
+					</div>
+
+					<div class="flex flex-col md:flex-row">
+						<span class="text-sm px-1 py-1">Responsibilities:</span>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
+							Contributor
+							(Programming)
+						</div>
 					</div>
 				</div>
+
 			</a>
 		</div>
 
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative">
+		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative overflow-hidden">
 			<video id="video-4" controlsList="nodownload" playsinline preload="metadata" class="z-10"
 				poster="assets/zambazooka-min.png">
 				<source type="video/mp4" src="assets/zambazooka.mp4" />
@@ -174,17 +200,52 @@
 					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
 				</div>
 
-				<div class="text-gray-200 px-4 py-4 bg-purple-700 bg-opacity-100">
-					<p class="block md:inline-block mb-4">Armed with bazookas, your goal is to
-						blow up your opponents as many times as you can!</p>
-					<span class="block md:inline-block text-sm">Responsibilities:</span>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">Game
-						Design
+				<div class="text-gray-200 bg-purple-700 bg-opacity-100 px-4 py-2 flex flex-col between">
+					<div class="flex">
+						<p class="block md:inline-block mb-4">Armed with bazookas, your goal is to
+							blow up your opponents as many times as you can!</p>
 					</div>
-					<div class="block md:inline-block pt-2 px-1 py-1 font-semibold text-xs md:text-sm">
-						Programming
+
+					<div class="flex flex-col md:flex-row">
+						<span class="text-sm px-1 py-1">Responsibilities:</span>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
+							Game
+							Design
+						</div>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
+							Programming
+						</div>
 					</div>
 				</div>
+
+			</a>
+		</div>
+
+		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative overflow-hidden">
+			<img class="z-10" src="assets/menu_screen.png" />
+			<a href="https://github.com/Jarskih/networking" title="networking" class="flex flex-col h-full w-full">
+
+				<div
+					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-yellow-900 bg-opacity-100">
+					<span>Tank game</span>
+					<img alt="Made in C++" class="inline-block h-auto w-8" src="assets/ISO_C++_Logo.svg" />
+				</div>
+
+				<div class="text-gray-200 bg-yellow-700 bg-opacity-100 px-4 py-2 flex flex-col between">
+					<div class="flex">
+						<p class="block md:inline-block mb-4">Simple tank game multiplayer game made with C++ / SDL2
+							using
+							UDP client server architecture.</p>
+					</div>
+
+					<div class="flex flex-col md:flex-row">
+						<span class="text-sm px-1 py-1">Responsibilities:</span>
+						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
+							Network Programming
+						</div>
+					</div>
+				</div>
+
 			</a>
 		</div>
 
@@ -192,10 +253,6 @@
 	</section>
 
 	<footer class="bg-center flex relative">
-		<div class="m-auto p-6 text-gray-700">
-			<a href="https://www.linkedin.com/in/jarihanski/" class="border-solid text-gray-100 border-b-2">Made by Jari
-				Hanski</a>
-		</div>
 	</footer>
 
 	<script type="text/javascript" src="js/render.js"></script>
