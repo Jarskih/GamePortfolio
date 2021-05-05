@@ -2,263 +2,311 @@
 <html lang="en" class="h-full" itemscope="" xmlns:og="http://ogp.me/ns#">
 
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<title>Game Programming Portfolio</title>
-	<meta content="Jari Hanski" name="author">
-	<meta content="Game Programming Portfolio" name="description">
-	<meta content="Game Programming Portfolio" name="keywords">
-	<link href="css/tailwind.min.css" rel="stylesheet" type="text/css">
-	<link href="css/custom.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Jari Hanski: Portfolio</title>
+    <meta content="Jari Hanski" name="author">
+    <meta content="Jari Hanski: Portfolio" name="description">
+    <meta content="Jari Hanski: Portfolio" name="keywords">
+    <link href="css/tailwind.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
 </head>
 
-<body onload=render() class="font-sans antialiased leading-tight bg-deepblue text-gray-100">
-	<nav
-		class="flex flex-col md:text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full max-w-6xl m-auto">
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__left">
+                <a href="/" class="mr-8 text-white hover:text-gray-100">Game Portfolio</a>
+                <a href="/projects" class="mr-8 hover:text-gray-100">Projects</a>
+                <a href="/about" class="mr-8 hover:text-gray-100">About me</a>
+            </div>
+            <div class="header__right">
+                <a target="blank" href="https://www.linkedin.com/in/jarihanski/" class="mr-8 hover:text-gray-100">
+                    LinkedIn
+                </a>
+                <a target="blank" href="https://github.com/Jarskih" class="hover:text-gray-100">
+                    Github
+                </a>
+            </div>
+        </header>
 
-		<div class="flex flex-col md:flex-row sm:mb-0 md:self-center">
-			<a class="block mb-2 md:mb-0 text-xl text-md no-underline text-gray-200 ml-2 px-1 font-bold" href="/">
-				<span class="border-solid border-gray-500  border-b-2 transition duration-300 ease-in-out">Game
-					Portfolio</span></a>
-			<a class="block mb-2 md:mb-0 text-xl no-underline text-gray-200  ml-2 px-1 font-bold" href="/projects">
-				<span
-					class="border-solid border-deepblue hover:border-gray-500 border-b-2 transition duration-300 ease-in-out">Projects</span></a>
-			<a class="block mb-2 md:mb-0 text-xl no-underline text-gray-200 border-solid border-deepblue hover:border-gray-500 border-b-2 ml-2 px-1 font-bold transition duration-300 ease-in-out"
-				href="/about">
-				<span
-					class="border-solid border-deepblue hover:border-gray-500 border-b-2 transition duration-300 ease-in-out">About
-					me
-				</span>
-			</a>
-		</div>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="#chaosgate" class="nav__link" data-scroll-to>
+                        <div class="media">
+                            <img src="https://img.itch.zone/aW1nLzQ0Nzg5ODEuanBn/315x250%23c/%2BCpEeh.jpg" alt=""
+                                class="media__img">
+                            <p class="media__content">
+                                <strong>Chaos Gate remake</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#scallywags" class="nav__link" data-scroll-to>
+                        <div class="media">
+                            <img src="assets/scallywags_1.jpg" alt="" class="media__img">
+                            <p class="media__content">
+                                <strong>Scallywags</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#spacehulk" class="nav__link" data-scroll-to>
+                        <div class="media">
+                            <img src="assets/space.hulk.jpg" alt="" class="media__img">
+                            <p class="media__content">
+                                <strong>Space Hulk remake</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                </li>
+                <li class="nav__item">
+                    <a href="#openapoc" class="nav__link" data-scroll-to>
+                        <div class="media">
+                            <img src="assets/openapoc.jpg" alt="" class="media__img">
+                            <p class="media__content">
+                                <strong>OpenApoc</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#zambazooka" class="nav__link" data-scroll-to>
+                        <div class="media">
+                            <img src="assets/zambazooka-min.png" alt="" class="media__img">
+                            <p class="media__content">
+                                <strong>Zambazooka</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-		<div class="sm:block hidden">
-			<a target="blank" href="https://www.linkedin.com/in/jarihanski/"
-				class="sm-mb-0 self-center bg-gray-900 text-white hover:bg-white hover:text-gray-900 inline-block px-6 py-4 font-bold transition duration-300 ease-in-out">
-				LinkedIn
-			</a>
-			<a target="blank" href="https://github.com/Jarskih"
-				class="sm-mb-0 self-center bg-gray-900 text-white hover:bg-white hover:text-gray-900 inline-block px-6 py-4 font-bold transition duration-300 ease-in-out">
-				Github
-			</a>
-		</div>
-	</nav>
+        <main class="main">
+            <article class="section max-w-screen-lg m-auto" id="chaosgate" data-section>
+                <header class="section__header"
+                    style="background-image: url('https://img.itch.zone/aW1nLzQ0Nzg5OTEuanBn/original/098CS7.jpg');">
+                    <div>
+                        <h1 class="section__title text-3xl md:text-4xl">Chaos Gate remake</h1>
+                    </div>
+                    <div>
+                        <p class="section__subtitle text-xl md:text-2xl">Turn-based strategy</p>
+                    </div>
+                    <div class="section__controls hidden sm:flex">
+                        <div class="logo">
+                            <span class="logo__name">Made in</span>
+                            <div class="bg-gray-900 rounded-full">
+                                <img src="assets/unity.svg" class="logo__img" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="section__content">
+                    <ul class="boxgrid">
+                        <li class="boxgrid__item">
+                            <div class="box box--chaosgate bg-blue-700 flex-col">
+                                <p class="text--large">XCOM inspired remake of the classic Chaos Gate game.
+                                    Includes
+                                    Ultramarines against the forces of
+                                    Chaos.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="boxgrid__item boxgrid__item--wide">
+                            <div class="box box--video">
+                                <video id="video-1" controlsList="nodownload" playsinline preload="metadata"
+                                    class="z-10" poster="assets/chaos_gate_1.jpg">
+                                    <source type="video/mp4" src="assets/2020-11-28 16-07-31.mkv" />
+                                </video>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
-	<div class="bg-center h-ful pb-18 sm:mt-24">
-		<div class="relative container lg:max-w-screen-xl mx-auto px-6 py-6 md:py-18">
-			<div class="mb-8 text-center max-w-6xl m-auto">
-				<h1
-					class="font-display text-gray-100 font-bold md:text-5xl text-2xl uppercase mb-6 leading-none m-auto">
-					Game Programming Portfolio</h1>
-				<p class="text-xl sm:text-2xl text-gray-200 leading-normal max-w-2xl m-auto mb-6">
-				</p>
-			</div>
-		</div>
-	</div>
+            <article class="section max-w-screen-lg m-auto" id="scallywags" data-section>
+                <header class="section__header"
+                    style="background-image: url('https://img.itch.zone/aW1hZ2UvNjMyMjIwLzM1MDk0OTQuanBn/original/E2TMR4.jpg');">
+                    <div>
+                        <h1 class="section__title text-3xl md:text-4xl">Scallywags</h1>
+                    </div>
+                    <div>
+                        <p class="section__subtitle text-xl md:text-2xl">Co-op action</p>
+                    </div>
+                    <div class="section__controls hidden sm:flex">
+                        <div class="logo">
+                            <span class="logo__name">Made in</span>
+                            <div class="bg-gray-900 rounded-full">
+                                <img src="assets/unity.svg" class="logo__img" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="section__content">
+                    <ul class="boxgrid">
+                        <li class="boxgrid__item">
+                            <div class="box box--scallywags flex-col">
+                                <p class="text--large">Scallywags!' is a chaotic, couch
+                                    co-op
+                                    game where you and your friends need to survive the journey over the open seas.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="boxgrid__item boxgrid__item--wide">
+                            <div class="box box--video">
+                                <video id="video-2" controlsList="nodownload" playsinline preload="metadata"
+                                    class="z-10" poster="assets/scallywags_1.jpg">
+                                    <source type="video/mp4" src="assets/scallywags.mp4" />
+                                </video>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
-	<section class="flex flex-col md:flex-row flex-wrap px-6 py-10 md:px-6 md:py-10 mx-auto max-w-screen-xl container">
+            <article class="section max-w-screen-lg m-auto" id="spacehulk" data-section>
+                <header class="section__header" style="background-image: url('assets/space.hulk.jpg');">
+                    <div>
+                        <h1 class="section__title text-3xl md:text-4xl">Space Hulk remake</h1>
+                    </div>
+                    <div>
+                        <p class="section__subtitle text-xl md:text-2xl">Turn-based strategy</p>
+                    </div>
+                    <div class="section__controls hidden sm:flex">
+                        <div class="logo">
+                            <span class="logo__name">Made in</span>
+                            <div class="bg-gray-900 rounded-full">
+                                <img src="assets/unity.svg" class="logo__img" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="section__content">
+                    <ul class="boxgrid">
+                        <li class="boxgrid__item">
+                            <div class="box box--spacehulk flex-col">
+                                <p class="text--large">A turn-based remake inspired by the classics boardgames
+                                    like Space
+                                    Hulk
+                                    and Space Crusade using neural network for pathfinding.
+                                </p>
+                                <br>
+                            </div>
+                        </li>
+                        <li class="boxgrid__item boxgrid__item--wide">
+                            <div class="box box--video">
+                                <video id="video-3" controlsList="nodownload" playsinline preload="metadata"
+                                    class="z-10" poster="assets/space.hulk.jpg">
+                                    <source type="video/mp4" src="assets/spacecrusade.mp4" />
+                                </video>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
-		<div class="w-full md:w-1/3 h-full md:h-100 mb-8 md:px-4 relative overflow-hidden">
-			<video id="video-1" controlsList="nodownload" playsinline preload="metadata" class="z-10"
-				poster="assets/chaos_gate_1.jpg">
-				<source type="video/mp4"
-					src="https://jarihanski.s3.eu-central-1.amazonaws.com/2020-11-28+16-07-31.mp4" />
-			</video>
-			<a href="https://jarski.itch.io/warhammer-40k-chaos-gate-remake" title="Chaos Gate remake"
-				class="flex flex-col h-full w-full">
-				<div
-					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-blue-900 bg-opacity-100">
-					<span>Chaos Gate remake</span>
-					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
-				</div>
-				<div
-					class="text-gray-200 px-4 py-2 bg-blue-700 bg-opacity-100 h-full flex-row justify-between align-bottom">
-					<div class="flex">
-						<p class="block md:inline-block mb-4">XCOM inspired remake of the classic Chaos Gate game.
-							Includes
-							Ultramarines against the forces of
-							Chaos.</p>
-					</div>
-					<div class="flex flex-col md:flex-row">
-						<div class="text-sm  px-1 py-1">Responsibilities:
-						</div>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">Game
-							Design</div>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
-							Programming</div>
-					</div>
-				</div>
-			</a>
-		</div>
+            <article class="section max-w-screen-lg m-auto" id="openapoc" data-section>
+                <header class="section__header" style="background-image: url('assets/openapoc.jpg');">
+                    <div>
+                        <h1 class="section__title text-3xl md:text-4xl">OpenApoc</h1>
+                    </div>
+                    <div>
+                        <p class="section__subtitle text-xl md:text-2xl">Real-time strategy</p>
+                    </div>
+                    <div class="section__controls hidden sm:flex">
+                        <div class="logo">
+                            <span class="logo__name">Made in</span>
+                            <div class="bg-gray-900 rounded-full">
+                                <img src="assets/ISO_C++_Logo.svg" class="logo__img" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="section__content">
+                    <ul class="boxgrid">
+                        <li class="boxgrid__item">
+                            <div class="box bg-blue-700 flex-col">
+                                <p class="text--large">OpenApoc re-implementation of the original X-COM:
+                                    Apocalypse,
+                                    written in C++ / SDL2.
+                                </p>
+                                <br>
+                            </div>
+                        </li>
+                        <li class="boxgrid__item boxgrid__item--wide">
+                            <div class="box box--video">
+                                <video id="video-3" controlsList="nodownload" playsinline preload="metadata"
+                                    class="z-10" poster="assets/openapoc.jpg">
+                                    <source type="video/mp4" src="assets/openapoc.mp4" />
+                                </video>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
-		<div class="w-full md:w-1/3 h-full md:h-100 mb-8 md:px-4 relative overflow-hidden">
-			<video id="video-2" controlsList="nodownload" playsinline preload="metadata" class="z-10"
-				poster="assets/scallywags_1.jpg">
-				<source type="video/mp4" src="https://jarihanski.s3.eu-central-1.amazonaws.com/Scallywags.mp4" />
-			</video>
-			<a href="https://jarski.itch.io/scallywags" title="Scallywags" class="flex flex-col h-full w-full">
-				<div
-					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-blue-900 bg-opacity-100">
-					<span>Scallywags</span>
-					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
-				</div>
-				<div class="text-gray-200 px-4 py-2 bg-blue-700 bg-opacity-100 h-full">
-					<div class="flex">
-						<p class="block md:inline-block mb-4">Scallywags!' is a chaotic, couch
-							co-op
-							game where you and your friends need to survive the journey over the open seas.</p>
-					</div>
-					<div class="flex flex-col md:flex-row">
-						<div class="text-sm px-1 py-1">Responsibilities:
-						</div>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">Game
-							Design</div>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
-							Programming</div>
-					</div>
-				</div>
-			</a>
-		</div>
+            <article class="section max-w-screen-lg m-auto" id="zambazooka" data-section>
+                <header class="section__header" style="background-image: url('assets/zambazooka-min.png');">
+                    <div>
+                        <h1 class="section__title text-3xl md:text-4xl">Zambazooka</h1>
+                    </div>
+                    <div>
+                        <p class="section__subtitle text-xl md:text-2xl">Physics based beathmatch</p>
+                    </div>
+                    <div class="section__controls hidden sm:flex">
+                        <div class="logo">
+                            <span class="logo__name">Made in</span>
+                            <div class="bg-gray-900 rounded-full">
+                                <img src="assets/unity.svg" class="logo__img" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="section__content">
+                    <ul class="boxgrid">
+                        <li class="boxgrid__item">
+                            <div class="box box--zambazooka flex-col">
+                                <p class="text--large">Armed with bazookas, your goal is to
+                                    blow up your opponents as many times as you can!
+                                </p>
+                                <br>
+                            </div>
+                        </li>
+                        <li class="boxgrid__item boxgrid__item--wide">
+                            <div class="box box--video">
+                                <video id="video-3" controlsList="nodownload" playsinline preload="metadata"
+                                    class="z-10" poster="assets/zambazooka-min.png">
+                                    <source type="video/mp4" src="assets/openapoc.mp4" />
+                                </video>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
 
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:px-4 relative overflow-hidden">
-			<video id="video-3" controlsList="nodownload" playsinline preload="metadata" class="z-10"
-				poster="assets/space.hulk.jpg">
-				<source type="video/mp4" src="https://jarihanski.s3.eu-central-1.amazonaws.com/spacecrusade.mp4" />
-			</video>
-			<a href="https://jarski.itch.io/space-hulk-space-crusade" title="Space Hulk remake "
-				class="flex flex-col h-full w-full">
+        <button class="scrollctrl scrollctrl--prev" data-scroll-dir="prev">
+            <span class="arrow arrow--large arrow--up"></span>
+        </button>
+        <button class="scrollctrl scrollctrl--next" data-scroll-dir="next">
+            <span class="arrow arrow--large arrow--down"></span>
+        </button>
 
-				<div
-					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-blue-900 bg-opacity-100">
-					<span>Space Hulk remake</span>
-					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
-				</div>
+        <footer class="footer">
+            <p>Made by: <a href="https://www.linkedin.com/in/jarihanski/">Jari Hanski</a></p>
 
-				<div class="text-gray-200 bg-blue-700 bg-opacity-100 px-4 py-2 flex flex-col between">
-					<div class="flex">
-						<p class="block md:inline-block mb-4">A turn-based remake inspired by the classics boardgames
-							like Space
-							Hulk
-							and Space Crusade using neural network for pathfinding.</p>
-					</div>
-
-					<div class="flex flex-col md:flex-row">
-						<span class="text-sm px-1 py-1">Responsibilities:</span>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
-							Game Design
-						</div>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
-							Programming
-						</div>
-					</div>
-				</div>
-
-			</a>
-		</div>
-
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative overflow-hidden ">
-			<video id="video-5" controlsList="nodownload" playsinline preload="metadata" class="z-10"
-				poster="assets/openapoc.jpg">
-				<source type="video/mp4" src="https://jarihanski.s3.eu-central-1.amazonaws.com/openapoc.mp4" />
-			</video>
-			<a href="https://github.com/OpenApoc/OpenApoc" title="Open source version of X-Com Apocalypse"
-				class="flex flex-col h-full w-full">
-
-				<div
-					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-blue-900 bg-opacity-100">
-					<span>OpenApoc</span>
-					<img alt="Made in C++" class="inline-block h-auto w-8" src="assets/ISO_C++_Logo.svg" />
-				</div>
-
-				<div class="text-gray-200 bg-blue-700 bg-opacity-100 px-4 py-2 flex flex-col between">
-					<div class="flex">
-						<p class="block md:inline-block mb-4">OpenApoc re-implementation of the original X-COM:
-							Apocalypse,
-							written in C++ / SDL2.</p>
-					</div>
-
-					<div class="flex flex-col md:flex-row">
-						<span class="text-sm px-1 py-1">Responsibilities:</span>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
-							Contributor
-							(Programming)
-						</div>
-					</div>
-				</div>
-
-			</a>
-		</div>
-
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative overflow-hidden">
-			<video id="video-4" controlsList="nodownload" playsinline preload="metadata" class="z-10"
-				poster="assets/zambazooka-min.png">
-				<source type="video/mp4" src="https://jarihanski.s3.eu-central-1.amazonaws.com/zambazooka.mp4" />
-			</video>
-			<a href="https://jarski.itch.io/zambazooka" title="ZambaZooka" class="flex flex-col h-full w-full">
-
-				<div
-					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-blue-900 bg-opacity-100">
-					<span>ZambaZooka</span>
-					<img alt="Made with Unity" class="w-16 md:w-24 h-auto" src="assets/unity.svg" />
-				</div>
-
-				<div class="text-gray-200 bg-blue-700 bg-opacity-100 px-4 py-2 flex flex-col between">
-					<div class="flex">
-						<p class="block md:inline-block mb-4">Armed with bazookas, your goal is to
-							blow up your opponents as many times as you can!</p>
-					</div>
-
-					<div class="flex flex-col md:flex-row">
-						<span class="text-sm px-1 py-1">Responsibilities:</span>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
-							Game
-							Design
-						</div>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
-							Programming
-						</div>
-					</div>
-				</div>
-
-			</a>
-		</div>
-
-		<div class="w-full sm:w-1/3 h-auto md:h-100 mb-8 md:mb-4 sm:mb-0 md:px-4 relative overflow-hidden">
-			<img class="z-10" src="assets/menu_screen.png" />
-			<a href="https://github.com/Jarskih/networking" title="networking" class="flex flex-col h-full w-full">
-
-				<div
-					class="flex justify-between text-lg md:text-2xl text-gray-200 px-4 py-4 bg-blue-900 bg-opacity-100">
-					<span>Tank game</span>
-					<img alt="Made in C++" class="inline-block h-auto w-8" src="assets/ISO_C++_Logo.svg" />
-				</div>
-
-				<div class="text-gray-200 bg-blue-700 bg-opacity-100 px-4 py-2 flex flex-col between">
-					<div class="flex">
-						<p class="block md:inline-block mb-4">Simple tank game multiplayer game made with C++ / SDL2
-							using
-							UDP client server architecture.</p>
-					</div>
-
-					<div class="flex flex-col md:flex-row">
-						<span class="text-sm px-1 py-1">Responsibilities:</span>
-						<div class="px-1 py-1 font-semibold text-xs md:text-sm">
-							Network Programming
-						</div>
-					</div>
-				</div>
-
-			</a>
-		</div>
-
-		</div>
-	</section>
-
-	<footer class="bg-center flex relative">
-	</footer>
-
-	<script type="text/javascript" src="js/render.js"></script>
-
+            <p class="footer__more">
+            <p>Based on code pen by <a href="https://twitter.com/mxbck">@mxbck</a></p>
+            </p>
+        </footer>
+    </div>
 </body>
+
+<script type="text/javascript" src="js/script.js"></script>
 
 </html>
