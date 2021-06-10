@@ -295,6 +295,30 @@ p {
   object-position: center;
   border-radius: 0.5rem;
 }
+.box--video::before, .box--video::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  transform: translate(-50%, -50%);
+}
+.box--video::before {
+  width: 100px;
+  height: 100px;
+  background-color: #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 38px rgba(0, 0, 0, 0.3);
+}
+.box--video::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #121519;
+  margin-left: 2px;
+}
 
 .scrollctrl {
   display: none;
